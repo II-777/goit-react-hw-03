@@ -1,7 +1,9 @@
 import ContactList from '../ContactList/ContactList';
+import SearchBox from '../SearchBox/SearchBox';
 import initialContacts from '../../data/contacts.json';
 import css from './App.module.css';
 import { useState } from 'react';
+import { FaAddressBook } from "react-icons/fa";
 
 export default function App() {
   const [contacts, setContacts] = useState(initialContacts);
@@ -25,7 +27,7 @@ export default function App() {
 
   return (
     <div className={css.container}>
-      <h1>Phonebook</h1>
+      <h1><FaAddressBook className={css.icon} />Phonebook</h1>
       <ContactList contacts={visibleContacts} onDelete={deleteContact} />
     </div>
   );

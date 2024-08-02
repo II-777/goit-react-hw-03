@@ -4,3 +4,7 @@
   flex-direction: column;
   gap: 24px;
 }
+
+.icon {
+  margin-right: 10px;
+}
