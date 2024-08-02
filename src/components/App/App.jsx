@@ -2,7 +2,6 @@ import ContactList from '../ContactList/ContactList';
 import initialContacts from '../../data/contacts.json';
 import css from './App.module.css';
 import { useState } from 'react';
-import { ImAddressBook } from "react-icons/im";
 
 export default function App() {
   const [contacts, setContacts] = useState(initialContacts);
@@ -26,7 +25,7 @@ export default function App() {
 
   return (
     <div className={css.container}>
-      <h1><ImAddressBook className={css.icon} /> Phonebook</h1>
+      <h1>Phonebook</h1>
       <ContactList contacts={visibleContacts} onDelete={deleteContact} />
     </div>
   );
