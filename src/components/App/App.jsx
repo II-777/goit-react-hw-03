@@ -28,6 +28,7 @@ export default function App() {
   return (
     <div className={css.container}>
       <h1><FaAddressBook className={css.icon} />Phonebook</h1>
+      <SearchBox value={filter} onFilter={setFilter} />
       <ContactList contacts={visibleContacts} onDelete={deleteContact} />
     </div>
   );
