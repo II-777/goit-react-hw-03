@@ -1,3 +1,20 @@
+.SearchBox {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  max-width: 558.4px;
+}
+
 .label {
-  margin: 0;
+  margin-bottom: 8px; /* Space between label and input */
+}
+
+.input {
+  width: 100%; /* Make input fill the container */
+  padding: 8px; /* Optional padding for the input */
+  box-sizing: border-box; /* Include padding in the width */
 }
