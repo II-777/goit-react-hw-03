@@ -1,31 +1,35 @@
-.SearchBox {
-  display: flex;
-  flex-direction: column; /* Stack label and input vertically */
-  padding: 10px 20px;
+.form {
+  padding: 20px;
   border: 1px solid black;
   border-radius: 10px;
-  margin-bottom: 10px;
   background-color: #f9f9f9;
+  margin-bottom: 10px;
   max-width: 558.4px;
 }
 
-.label {
-  margin-bottom: 8px; /* Space between label and input */
-}
-
-.input {
+.field {
   width: 100%; /* Make input fill the container */
   padding: 8px; /* Optional padding for the input */
   box-sizing: border-box; /* Include padding in the width */
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .btn {
+  display: flex;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fff;
   cursor: pointer;
   font-size: 14px;
-  max-width: 20px;
+  width: 100px;
+  padding: 12px;
+  margin: 0 auto; /* Center the button horizontally */
 }
 
 .btn:hover {
