@@ -7,6 +7,8 @@
   margin-bottom: 10px;
   background-color: #f9f9f9;
   max-width: 558.4px;
+  min-width: 300px;
+  overflow: hidden;
 }
 
 .label {
